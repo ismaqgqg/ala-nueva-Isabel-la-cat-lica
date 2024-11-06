@@ -1,0 +1,108 @@
+header {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.main-content {
+    display: flex; /* Disposición horizontal por defecto */
+    flex-direction: row; /* Coloca los elementos uno al lado del otro */
+    align-items: flex-start; /* Alineación superior en pantallas grandes */
+    margin-top: 100px;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+}
+
+.contact-form, .promo-section {
+    width: 45%; /* Ajusta el ancho para pantallas grandes */
+    margin: 10px; /* Espacio entre ellos en horizontal */
+    padding: 20px; /* Relleno interior */
+    border: 1px solid #ccc; /* Borde de cada sección */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #fff; /* Fondo blanco para el formulario y la sección */
+}
+
+.promo-section {
+    background-color: #f9f9f9; /* Fondo de la sección de promociones */
+}
+
+.promo-section h2, .contact-form h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.promotions {
+    display: flex; /* Disposición vertical para las promociones */
+    flex-direction: column; /* Coloca las promociones en columnas */
+}
+
+.promotion {
+    margin-bottom: 15px; /* Espacio entre promociones */
+}
+
+/* Estilos adicionales para el formulario */
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+select {
+    margin-bottom: 15px; /* Espacio entre los campos */
+    width: 100%; /* Asegúrate de que los inputs y selects ocupen todo el ancho */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.horarios {
+    margin-top: 10px; /* Espacio entre el turno y los horarios */
+}
+
+button {
+    background-color: #063a08; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; /* El botón ocupa todo el ancho del formulario */
+}
+
+/* Estilos para el texto animado */
+.animated-text {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 10s; /* Animación al aparecer */
+    color: #fff;
+    font-size: xx-large;
+    margin-top: 100px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0; /* Espacio interior en el footer */
+    background-color: #333; /* Fondo oscuro para el footer */
+    color: white; /* Color de texto blanco */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 1000px) {
+    .main-content {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .contact-form, .promo-section {
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        margin: 10px 0; /* Espacio entre ellos en vertical */
+    }
+}
+
+
+
+
+

@@ -1,0 +1,160 @@
+/* Estilo del título del blog */
+.titublog {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titublog h1 {
+  font-size: 2.5em;
+  color: #333; /* Color del texto */
+}
+
+/* Estilo del contenedor de tarjetas */
+.contenedor-matriz33 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive con columnas automáticas */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Estilo para cada tarjeta */
+.tarjeta-cuadro01 {
+  display: flex; /* Usar flexbox para la tarjeta */
+  flex-direction: column; /* Apilar elementos en columna */
+  background-color: #fff; /* Fondo blanco para tarjetas */
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Ocultar desbordamiento */
+  transition: transform 0.3s ease; /* Transición al pasar el mouse */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Centrar texto */
+}
+
+.tarjeta-cuadro01:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo de las imágenes */
+.tarjeta-cuadro01 img {
+  width: 100%; /* Imagen ocupa el 100% del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Estilo de los encabezados dentro de las tarjetas */
+.tarjeta-cuadro01 h3 {
+  font-size: 1.5em;
+  color: #007bff; /* Color azul para encabezados */
+  margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo de los párrafos dentro de las tarjetas */
+.tarjeta-cuadro01 p {
+  font-size: 1em;
+  color: #666; /* Color gris para texto */
+  margin: 0 10px 15px; /* Espaciado entre párrafo y botones */
+  flex-grow: 1; /* Permitir que el párrafo crezca */
+}
+
+/* Estilo de los botones */
+.btn-vermas01 {
+  background-color: #007bff; /* Fondo azul */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Cambiar cursor a puntero */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-vermas01:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+  
+  /* Estilos para la pestaña emergente */
+  .pestaña-emergente02 {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Altura de la pestaña emergente */
+    background-color: rgba(17, 11, 11, 0.552);
+    z-index: 1000;
+    animation: subir02 0.5s ease-out forwards; /* Animación de subida */
+    align-items: center;
+  }
+  
+  @keyframes subir02 {
+    from {
+      transform: translateY(100%); /* Inicia desde la parte inferior */
+    }
+    to {
+      transform: translateY(0); /* Termina en la posición original */
+    }
+  }
+  .contenido-emergente02 {
+    background-color: rgb(255, 255, 255);
+    height: 100%; /* Cambiar a auto para ajustar la altura según el contenido */
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    width: 90%; /* Ajustar el ancho */
+    max-width: 80%; /* Definir un ancho máximo para mantener la responsividad */
+    margin: 10% auto; /* Centrar el modal */
+    border-radius: 20px;
+    margin-top: 40%;
+}
+
+  
+  .btn-cerrar02 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001; /* Asegura que esté sobre el contenido */
+  }
+  
+  .btn-cerrar02:hover {
+    color: #ff0000;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .barra-navegacion123 {
+    background-color: #00000000; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .barra-navegacion123 ul {
+    list-style-type: none; /* Quitar puntos de lista */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    display: flex; /* Alinear los elementos en línea */
+    justify-content: center; /* Centrar horizontalmente */
+  }
+  
+  .barra-navegacion123 li {
+    margin: 0 15px; /* Espacio entre elementos de la lista */
+  }
+  
+  .barra-navegacion123 a {
+    text-decoration: none; /* Quitar subrayado */
+    color: rgba(0, 0, 0, 0); /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espaciado interno del enlace */
+    border: 2px solid transparent; /* Borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+  }
+  
+  .barra-navegacion123 a:hover {
+    background-color: #00000000; /* Color de fondo al pasar el ratón */
+    border-color: rgba(0, 0, 0, 0); /* Color del borde al pasar el ratón */
+  }
+  
+  /* -------------------------------------------------------------contenedor-----------------------------------------------------------------------------*/
+  

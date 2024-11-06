@@ -1,0 +1,180 @@
+nav {
+  background: linear-gradient(to right, #000000, #000000, #441b1b);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  height: 50px;
+  position: fixed; /* Menú fijo en la parte superior */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; /* Asegúrate de que tenga un z-index alto */
+}
+
+/* Estilos del logo */
+nav .logo {
+  flex-basis: 20%; /* Ocupa el 20% del espacio */
+  text-align: left; /* Alineado a la izquierda */
+}
+
+nav .logo img {
+  max-height: auto;
+}
+
+/* Íconos sociales centrados */
+nav .social-icons {
+  flex-basis: 40%; /* Ocupa el 40% del espacio central */
+  display: flex;
+  justify-content: center; /* Centra los íconos */
+  align-items: center;
+}
+
+nav .social-link {
+  color: white;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav .social-link:hover {
+  color: #ff5555; /* Color al pasar el mouse por los íconos */
+}
+
+/* Estilos de la lista del menú */
+nav ul {
+  flex-basis: 30%; /* Ocupa el 30% del espacio */
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end; /* Alineado a la derecha */
+  align-items: center;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+  font-size: x-large;
+  position: relative;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  border-bottom: 2px solid transparent; /* Línea invisible inicialmente */
+}
+
+/* Efecto de subrayado */
+nav a:hover {
+  border-bottom: 2px solid white; /* Subrayado visible al pasar el mouse */
+  color: #ffffff;
+}
+
+/* Estilos para el ícono del menú hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 0 30px;
+  
+}
+
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 1000px) {
+  nav .social-icons {
+    display: none; /* Ocultar íconos sociales en pantallas pequeñas */
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta esto para que esté justo debajo del menú hamburguesa */
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centrar el texto */
+    background-color: #000000; /* Fondo sólido para el menú */
+    z-index: 100; /* Asegúrate de que tenga un z-index alto */
+    padding: 10px 0; /* Espaciado en la parte superior e inferior */
+
+  }
+
+  nav li {
+    margin-left: 0; /* Eliminar margen a la izquierda */
+    margin-top: 10px; /* Espaciado entre elementos del menú */
+  }
+
+  nav ul.active {
+    display: flex; /* Mostrar el menú cuando está activo */
+  }
+
+  nav .menu-toggle {
+    display: block; /* Mostrar el ícono del menú hamburguesa */
+  }
+
+  /* Ajustar los enlaces para que ocupen el ancho completo */
+  nav a {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px 0; /* Espaciado vertical */
+    font-size: large; /* Tamaño de fuente más grande para legibilidad */
+  }
+}
+/* Asegura que el contenido no quede oculto detrás del menú */
+body {
+  padding-top: 100px;
+}
+
+
+
+  
+  /* Estilos para las secciones */
+  section {
+    padding: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: white;
+
+    height: auto;
+
+  }
+  
+  section.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Estilos para productos */
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px ;
+  }
+  
+  .product h3 {
+    margin: 10;
+  }
+  
+  .price {
+    color: #262926;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    margin-top: 50px;
+  }
+  

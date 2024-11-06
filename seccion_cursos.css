@@ -1,0 +1,347 @@
+body {
+  height: 200dvh;
+  background-color: #9a9a9a;
+}
+
+
+/*--------------------------contenedor-curso1001-------------------------------------*/
+.contenedor-curso2001 {
+  width: 99%;
+  height: 800px; /* Puedes cambiar esto a una altura mínima si deseas que el contenedor se ajuste mejor */
+  background: linear-gradient(to right, hsla(233, 74%, 30%, 0), hsla(147, 74%, 15%, 0)), url("https://img.freepik.com/foto-gratis/herramientas-salon-marco-vintage-mesa-madera-trabajos-concepto-carrera_53876-143259.jpg?semt=ais_hybrid");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.textos-curso2002 {
+  display: flex;
+  height: 430px; /* Cambia esto si deseas que el contenedor sea más flexible */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-curso2002 h1 {
+  font-size: 8vw; /* Cambia de px a vw para adaptarse al tamaño de la pantalla */
+}
+
+.textos-curso2002 h2 {
+  font-size: 5vw; /* Cambia de px a vw para adaptarse al tamaño de la pantalla */
+}
+
+.titulo-centro2003 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6vw; /* Cambia de px a vw para adaptarse al tamaño de la pantalla */
+  font-weight: bold;
+  text-align: center;
+}
+
+.wave-curso2004 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos adicionales para móviles */
+@media (max-width: 768px) {
+  .contenedor-curso2001 {
+
+    height: auto; /* Cambia a auto para permitir el ajuste según el contenido */
+  }
+  .textos-curso2002 {
+    width: auto;
+    height: auto; /* Cambia a auto para permitir el ajuste según el contenido */
+  }
+}
+
+
+/*---------------------------------------------------------------curso imagenes ------------------------------------------------------------*/
+.contenedor-imagenes1005 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px; /* Espacio entre filas */
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+}
+
+.fila1006 {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las imágenes se ajusten en múltiples líneas */
+  gap: 20px; /* Espacio entre imágenes */
+  justify-content: center;
+  width: 100%; /* Asegurarse de que ocupe todo el ancho */
+}
+
+.imagen1007 {
+  position: relative; /* Necesario para posicionar el texto */
+  text-align: center; /* Centrar el texto debajo de cada imagen */
+  flex: 1 1 300px; /* Permitirá que las imágenes se ajusten en diferentes tamaños */
+  max-width: 400px; /* Máximo ancho para las imágenes */
+}
+
+.imagen1007 img {
+  width: 100%; /* Asegura que las imágenes se ajusten a su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: 2px solid #00000000; /* Añade borde si lo deseas */
+  transition: transform 0.3s ease-in-out; /* Para la animación */
+}
+
+.texto1008 {
+  position: absolute;
+  bottom: 10%; /* Centrar verticalmente hacia abajo */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, 0); /* Ajuste para centrar exactamente */
+  font-size: 20px; /* Cambia el tamaño de la fuente según sea necesario */
+  color: #a7a7a7;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.imagen1007:hover img {
+  transform: scale(1.1); /* Ampliar imagen al pasar el ratón */
+}
+
+.imagen1007:hover .texto1008 {
+  opacity: 1; /* Mostrar texto al pasar el ratón */
+}
+
+/* Media Queries para ajustar el tamaño del texto y la disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+  .texto1008 {
+    font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+  }
+
+  .contenedor-imagenes1005 {
+    margin-top: 50px; /* Menos margen en pantallas pequeñas */
+  }
+}
+
+/*---------------------------------------------------------contenedor-doble1009-------------------------------------------------------------*/
+.contenedor-doble1009 {
+  display: flex;
+  flex-direction: column; /* Inicialmente vertical */
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  text-align: center; /* Centrar texto en el contenedor */
+  background-color: #ffffff00;
+}
+
+.imagen1010, .texto1011 {
+  flex: 1; /* Ocupa el mismo espacio */
+  display: flex; /* Permite centrar contenido interno */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center; /* Centrar contenido verticalmente */
+}
+
+.imagen1010 img {
+  width: 100%; /* Ajustar el ancho al contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  max-width: 800px; /* Máximo ancho de la imagen */
+  object-fit: cover;
+}
+
+.texto1011 {
+  margin-top: 20px; /* Espacio entre imagen y texto */
+  display: flex; /* Para que el texto sea un contenedor flex */
+  flex-direction: column; /* Texto en disposición vertical */
+  align-items: center; /* Centrar el texto dentro del contenedor */
+}
+
+.texto1011 h2 {
+  font-size: 2.5rem; /* Ajustar tamaño de fuente para responsividad */
+}
+
+.texto1011 p {
+  font-size: 1.25rem; /* Ajustar tamaño de fuente para responsividad */
+  color: hsla(0, 0%, 15%, 0.87);
+}
+
+/* Media Queries para mejorar la responsividad en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor-doble1009 {
+    flex-direction: column; /* Vertical en pantallas pequeñas */
+  }
+
+  .texto1011 {
+    margin-top: 20px; /* Espacio entre imagen y texto */
+  }
+
+  .texto1011 h2 {
+    font-size: 2rem; /* Reducir tamaño de título */
+  }
+
+  .texto1011 p {
+    font-size: 1rem; /* Reducir tamaño de texto */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .contenedor-doble1009 {
+    flex-direction: row; /* Horizontal en pantallas grandes */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+
+  .imagen1010, .texto1011 {
+    flex: 1; /* Ambas ocupan el mismo espacio */
+    margin: 0 10px; /* Espacio entre imagen y texto */
+  }
+
+  .texto1011 {
+    margin-top: 0; /* Eliminar espacio superior en modo horizontal */
+  }
+}
+
+/*--------------------------------------------------- contenedor-negro1012-------------------------------------------*/
+.contenedor-negro1012 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #1e1e1e;
+  margin-top: 0;
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  margin-top: 100px;
+}
+
+.imagen-container1013 {
+  text-align: center;
+  flex: 1; /* Permitir que la imagen tome espacio disponible */
+}
+
+.imagen-container1013 img {
+  max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+.titulo1014 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.formulario-container1015 {
+  max-width: 600px;
+  background-color: #f7f7f700;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Permitir que el formulario tome espacio disponible */
+}
+
+.formulario-container1015 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-container1015 label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.formulario-container1015 input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Ajustar el ancho al contenedor */
+}
+
+.formulario-container1015 button {
+  padding: 10px;
+  background-color: #333;
+  color: rgba(255, 255, 255, 0.76);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-container1015 button:hover {
+  background-color: #380e0e;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .contenedor-negro1012 {
+    flex-direction: column; /* Cambiar a vertical en pantallas pequeñas */
+    align-items: center; /* Centrar elementos */
+  }
+
+  .imagen-container1013 {
+    margin-bottom: 20px; /* Espacio entre imagen y formulario */
+    width: 100%; /* Hacer que ocupe todo el ancho disponible */
+  }
+
+  .formulario-container1015 {
+    width: 90%; /* Hacer que el formulario ocupe el 90% para un mejor ajuste */
+    max-width: 600px; /* Mantener un ancho máximo para pantallas más grandes */
+  }
+
+  .formulario-container1015 input {
+    width: 100%; /* Asegurarse de que el campo de entrada ocupe el 100% del ancho */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo1014 {
+    font-size: 24px; /* Ajustar el tamaño del título para teléfonos pequeños */
+  }
+
+  .formulario-container1015 h1 {
+    font-size: 24px; /* Ajustar el tamaño de texto del encabezado en el formulario */
+  }
+
+  .formulario-container1015 label {
+    font-size: 14px; /* Ajustar el tamaño de las etiquetas */
+  }
+
+  .formulario-container1015 input {
+    padding: 8px; /* Ajustar el padding para un mejor ajuste en pantallas pequeñas */
+    font-size: 14px; /* Ajustar el tamaño de fuente de los inputs */
+  }
+
+  .formulario-container1015 button {
+    padding: 8px; /* Ajustar el padding del botón */
+    font-size: 14px; /* Ajustar el tamaño de fuente del botón */
+  }
+}
+
+
+
+/*--------------------------------------------------- divisiones y líneas -------------------------------------------------*/
+.linea-divisoria1004 {
+  height: 2px;
+  background-color: #000;
+  margin: 50px 0;
+}
+
+/* ----------------------------------- Responsivo ---------------------------------------*/
+
+@media (max-width: 768px) {
+  .contenedor-doble1009 {
+    flex-direction: column;
+  }
+  
+  .texto1011 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .contenedor-negro1012 {
+    flex-direction: column;
+  }
+}
